@@ -224,6 +224,16 @@ h1 {
     font-size: 2rem;
   }
 
+  .home-content {
+    display: block;
+    justify-content: center;
+  }
+
+  .home-content img {
+    width: 150px;
+    height: 150px;
+  }
+
   .home-content p{
     font-size: 0.875rem;
   }

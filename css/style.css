@@ -111,6 +111,7 @@ header{
 
 .page-title{
   font-size: 5rem;
+  padding-left: 16px;
 }
 
 /* footer */
@@ -216,6 +217,28 @@ h1 {
 .home-content p{
   font-size: 1rem;
 }
+
+/* schedule */
+.schedule img {
+  width: 400px;
+  height: 300px;
+}
+
+/* menu */
+section {
+  width: 70%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+section img {
+  width: 250px;
+  height: 250px;
+}
+
+section:nth-child(odd) {
+  flex-direction: column-reverse;
+  }
 
 }
 
@@ -341,4 +364,15 @@ p {
   font-size: 0.875rem;
 }
 
+/* schedule */
+.schedule img {
+  width: 250px;
+  height: 200px;
+}
+
+/* menu */
+section img {
+  width: 200px;
+  height: 200px;
+}
 }

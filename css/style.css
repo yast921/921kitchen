@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* 共通部分 */
+html{
+  width: 100%;
+  font-size: 100%;
+}
+body{
+  line-height: 1.7;
+  background-color: #fdf6e4;
+  color: #432
+}
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* home背景*/
+.big-bg{
+  background-position: center top;
+}
+#home{
+  /* height: 500px; */
+  background-image: url(menu_img/car_in_2.png);
+}
+
+/* header部分 */
+
+.pc-main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    padding: 24px 0;
+    list-style: none;
+}
+.pc-main-nav li{
+  margin-left: 36px;
+}
+/* .pc-main-nav a{
+  color: #432;
+} */
+.main-nav a:hover{
+  color: rgb(184, 210, 15);
+}
+
+.logo {
+  padding: 20px 0;
+  vertical-align: top;
+}
+
+.pc-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header{
+  background-color: rgb(252, 210, 0);
+  box-shadow: 0 3px 3px burlywood;
+  padding: 0 32px;
+}
+
+/* スマホ表示 ↓↓*/
+.sp-menu {
+  display: none;
+}
+.overlay {
+  display: none;
+} */
+/* ここまで↑↑
+
+/* home */
+.wrapper{
+  padding: 0 32px;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 32px;
+}
+
+.home-content img {
+  border-radius: 50%;
+  box-shadow: 0 3px 3px burlywood;
+}
+
+.home-content p{
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 40px;
+  text-align: right;
+  animation: fadeIn 2s ease 1s 1 normal backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.page-title{
+  font-size: 5rem;
+}
+
+/* footer */
+footer{
+  background-color: #432712;
+  padding: 24px 0;
+  }
+footer p{
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* menu */
+section {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  padding: 30px;
+  border-bottom: 2px solid  #432712;
+}
+
+section img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  flex: 1;
+  object-fit:cover;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+
+.menu_inner {
+  padding: 20px;
+}
+
+.menu_inner p {
+  margin-top: 20px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+/* schedule */
+.schedule {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* car move */
+.carmove {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.car {
+  width: 230px;
+  height: 160px;
+  background-image: url("menu_img/car_remove_2.png");
+  background-size: 230px 160px;
+  animation: drive_step 1s steps(4, end) infinite, driving 10s linear infinite;
+}
+
+@keyframes drive_step {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 5px;
+  }
+}
+@keyframes driving {
+  0% {
+    transform: translateX(0);
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+
+@media(max-width:840px){
+  .page-title{
+    font-size: 2.5rem;
+  }
+
+/* HEADER */
+.main-nav{
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.main-nav li{
+  margin: 0 10px;
+}  
+
+.home-content p{
+  font-size: 1rem;
+}
+
+}
+
+@media(max-width: 580px){
+  .page-title{
+    font-size: 2rem;
+  }
+
+  .home-content p{
+    font-size: 0.875rem;
+  }
+
+  /* HEADER ハンバーガーメニュー*/
+
+.pc-menu {
+  display: none;
+}
+.sp-menu {
+  display: block;
+  margin-left: auto;
+}
+header {
+  display: flex;
+}
+
+.sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+.bi-list {
+  font-size: 18px;
+}
+.sp-menu a {
+  font-size: 18px;
+
+}
+.sp-menu li {
+  list-style: none;
+}
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .1s;
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: .2s;
+}
+
+.overlay.show li:nth-child(3) {
+  transition-delay: .3s;
+}
+
+.main-nav{
+  display: none;
+
+}
+
+/* HOME */
+.home-content{
+  margin-top: 20px;
+}
+p {
+  font-size: 0.875rem;
+}
+
+}

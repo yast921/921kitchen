@@ -1,0 +1,134 @@
+@charset "UTF-8"; 
+
+.tab-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn {
+    flex-basis: 30%;
+    text-align: center;
+}
+.btn a {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    padding: 8px;
+    text-decoration: none;
+    line-height: 1.2;
+    color: #181716;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+.btn a.is-active {
+    background-color:#432712;
+    color: white;
+    font-weight: bold;
+}
+
+#tab-contents {
+    background-color:#432712;
+}
+.tab-contents-item {
+    display: none;
+    position: relative;
+}
+
+.menu-item {
+    display: flex;
+    padding: 16px 24px;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+.menu-item img {
+    flex: 1;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    object-fit: scale-down;
+}
+
+.tab-contents-item a {
+    display: block;
+    font-size: 0.875rem;
+    color: #432712;
+    border: 1px solid #fdf6e4;
+    background-color: #fdf6e4;
+    /* margin-top: 16px; */
+    border-radius: 8px;
+    padding: 5px 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.item-inner {
+    /* position: relative; */
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.tab-contents-item p {
+    margin: 16px auto ;
+    padding-right: 5px;
+}
+
+.tab-contents-item.is-active {
+    display: flex;
+    background-color:#432712;
+    color: white;
+    font-weight: bold;
+}
+
+
+.tab-contents-item.is-active p {
+    animation:  fadeinAnime 1s forwards;
+}
+
+@keyframes fadeinAnime{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* モバイル版 */
+@media(max-width:840px){
+    .menu-item {
+        display: block;
+        margin: 0 auto;
+    }
+    .tab-contents-item img {
+        margin-top: 30px;
+        height: auto;
+        object-fit: cover;
+    }
+    .tab-contents-item p {
+        font-size: 0.85rem;
+        padding: 0 8px;
+    }
+    .tab-contents-item h1 {
+        font-size: 1rem;
+    }
+
+    .tab-contents-item a {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+}
+
+@media(max-width:600px){
+    .menu-item {
+        display: block;
+        margin: 0 auto;
+    }
+}

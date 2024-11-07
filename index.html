@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="921Kitchenキッチンカー" />
+    <title>921Kitchen</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="css/menu_img/car_remove.png" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="css/tab copy.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="home" class="big-bg">
+      <header>
+        <div class="pc-header wrapper">
+          <h1>
+            <a href="index.html"
+              ><img
+                class="logo"
+                src="css/menu_img/car_remove.png"
+                width="70"
+                height="48"
+                alt="ロゴ"
+            /></a>
+          </h1>
+          <!-- パソコンメニュー -->
+          <div class="pc-menu">
+            <nav>
+              <ul class="pc-main-nav">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/921_kitchen/"
+                    class="bi bi-instagram"
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- スマホメニュー -->
+        <div class="sp-menu">
+          <i class="bi bi-list" id="open"></i>
+        </div>
+      </header>
+      <div class="overlay">
+        <i class="bi bi-x" id="close"></i>
+        <nav>
+          <ul>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/921_kitchen/"
+                class="bi bi-instagram"
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="home-content wrapper">
+        <img src="css/menu_img/logo_2.jpg" width="250" height=250" alt="" />
+        <p>
+          アイスクリームとドリンクのキッチンカーです♪<br />
+          愛媛県内での何気ない日常や<br />イベントに出店しております<br />
+          のぞいてみてください(*'ω'*) <br />
+        </p>
+      </div>
+      <div class="carmove">
+        <div class="car"></div>
+      </div>
+    </div>
+    <!-- タブ -->
+    <div class="tab-btn" id="tab-btn">
+      <div class="btn"><a data-tab="#menu1">ダルゴナとは</a></div>
+      <div class="btn"><a data-tab="#menu2">出店スケジュール</a></div>
+      <div class="btn"><a data-tab="#menu3">お知らせ</a></div>
+    </div>
+    <div id="tab-contents">
+      <div id="menu1" class="tab-contents-item">
+        <div class="menu-item">
+          <img
+            src="css/menu_img/dalgona_ivent-remove.png"
+            width="400"
+            height="300"
+            alt="ダルゴナ"
+          />
+          <div class="item-inner">
+            <h1>ダルゴナとは -달고나-</h1>
+            <p>ダルゴナとは、韓国語でカルメ焼きのような焼き菓子のことです。</p>
+            <p>
+              ダルゴナアイスは、砕いたダルゴナをバニラアイスに混ぜた、食感のあるアイスクリームです。
+            </p>
+            <p>
+              ダルゴナコーヒーはミルクの上に乗ったコーヒーホイップの<br />風味や色がダルゴナに似ているということから、その名がついたとか💡
+            </p>
+            <br />
+          </div>
+        </div>
+        <a href="menu.html">他のメニューも見てみる👀 ⇒ </a>
+      </div>
+
+      <div id="menu2" class="tab-contents-item">
+        <div class="menu-item">
+          <img src="css/menu_img/november_11.png" width="500" height="350" />
+          <div class="item-inner">
+            <p>
+              予定は天候や諸事情によって、変更になることがございます。<br />
+              インスタグラムのストーリーにて随時お知らせいたしますので、<br />
+              併せてチェックをお願いします🚚💨💨
+            </p>
+          </div>
+        </div>
+        <a href="schedule.html">詳しく見てみる👀 ⇒ </a>
+      </div>
+      <div id="menu3" class="tab-contents-item">
+        <p>
+          準備中<br />
+          しばらくお待ちくださいm(__)m
+        </p>
+      </div>
+    </div>
+
+    <!--  /home -->
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy;921Kitchen</small></p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

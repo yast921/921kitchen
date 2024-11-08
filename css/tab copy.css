@@ -125,7 +125,7 @@
     }
 }
 
-@media(max-width:600px){
+@media(max-width:580px){
     .menu-item {
         display: block;
         margin: 0 auto;
@@ -133,5 +133,9 @@
 
     .btn a {
         font-size: 0.875rem;
+    }
+    .tab-contents-item a {
+        font-size: 0.75rem;
+        padding: 5px 5px;
     }
 }

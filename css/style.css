@@ -166,6 +166,12 @@ h1 {
   text-align: center;
 }
 
+/* contact */
+.contact {
+  margin-top: 30px;
+  text-align: center;
+}
+
 /* car move */
 .carmove {
   display: flex;
@@ -374,5 +380,11 @@ p {
 section img {
   width: 200px;
   height: 200px;
+}
+
+/* contact */
+.contact img {
+  width: 150px;
+  height: 200px;  
 }
 }
